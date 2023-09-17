@@ -5,7 +5,7 @@ using DG.Tweening;
 
 public class SphereMover : MonoBehaviour
 {
-    void Start()
+    private void Start()
     {
         transform.DOMoveX(-3, 3).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
     }

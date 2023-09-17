@@ -8,7 +8,7 @@ public class TextChanger : MonoBehaviour
 {
     [SerializeField] private Text _text;
 
-    void Start()
+    private void Start()
     {
         Sequence textChangeSequence = DOTween.Sequence();
         textChangeSequence.Append(_text.DOText("яёниор", 2));

@@ -10,7 +10,7 @@ public class ImageColorChanger : MonoBehaviour
 {
     [SerializeField] private RawImage _rawImage;
 
-    void Start()
+    private void Start()
     {
         _rawImage.DOColor(Color.green, 3).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
     }
